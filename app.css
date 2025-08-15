@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F4ECE1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* box-sizing: border-box; */
+
+    
+}
+
+
+/* Animation - Typewriter Effect */
+
+#typed-text {
+    margin-top: 15vh;
+    color: #515252;
+}
+
+.typewriter {
+    display: flex;
+    justify-content: center; /* remove this for left aligned appearance */
+}
+
+.typewriter p {
+    font-family: monospace;
+    font-size: 4vh;
+    margin-inline: auto;  /* remove this for left aligned appearance */
+    overflow: hidden;
+    /* Keeps on a single line */
+    white-space: nowrap;
+    /* The cursor */
+    border-right: 0.2vh solid;
+    animation: typing 3s steps(21) forwards,
+    blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Main Page */
+
+.container {
+    margin-top: 10vh;
+    margin-left: 7vh;
+    height: 58vh;
+    width: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.2vh #2D2E2E solid;
+    border-radius: 5vh;
+    border-color: #cdcece;
+    background-color: #F4ECE1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+}
+
+h1 {
+    margin-top: 6vmin;
+    font-size: 6vmin;
+    color: #3D3E3E;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pick-mood {
+    height: 60vmin;
+    width: 60vmin; /* adjust as needed */
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+
+}
+
+#moodSelectOption {
+    padding: 2vmin;
+    font-size: 3vmin;
+    font-family: monospace;
+    background-color: #F5EBE0;
+    color: #3D3E3E;
+    
+    border-radius: 1.5vmin;
+    border-color: #C1C3C3;
+    border-width: 0.2vmin;
+
+    transition: transform 0.15s ease-in-out;
+    text-align: center;
+}
+
+#moodSelectOption:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+/* Generate and Regenerate buttons */
+
+.button {
+    border: none;
+    background: none;
+
+    padding: 2vmin;
+    font-size: 3vmin;
+    font-family: monospace;
+    background-color: #DD6031;
+    border-color: #DD6031;
+    color: white;
+    border-radius: 1vmin;
+    transition: transform 0.10s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.button:hover {
+    background-color: #D35122;
+    border-color: #D35122;
+    cursor: pointer;
+    transform: scale(1.006);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+
+}
+
+/* Quote Page */
+
+.quote-page {
+    height: 100vmin;
+    width: 99.9vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vmin;
+
+    /* Fade-in content */
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+#quote {
+    font-size: 5vmin; /* font-size: 5vh */
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 0 2vmin;
+    line-height: 1.4;
+    letter-spacing: 0.1vmin;
+}
+
+#author {
+    font-size: 4vmin;
+}
+
+
+
+/* Hide Class */
+
+.hide {
+    display: none;
+}
+
+
+@media (min-width: 320px) and (max-width: 600px) {
+  
+/* Animation - Typewriter Effect */
+
+.typewriter {
+    display: flex;
+    justify-content: center; /* remove this for left aligned appearance */
+}
+
+.typewriter p{
+    font-family: monospace;
+    font-size: 3vh;
+    margin-inline: auto;  /* remove this for left aligned appearance */
+    overflow: hidden;
+    /* Keeps on a single line */
+    white-space: nowrap;
+    /* The cursor */
+    border-right: 0.2vh solid;
+    animation: typing 3s steps(21) forwards,
+    blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;    
+    }
+}
+
+
+/* Main Page */
+
+#typed-text {
+    margin-top: 30vh;
+    color: #515252;
+}
+
+.container {
+    margin-top: 7vh;
+    margin-left: 5vmin;
+    height: 35vh; /* adjust */
+    width: 34vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: 0.2vh #2D2E2E solid;
+    border-radius: 5vmin;
+    border-color: #cdcece;
+    background-color: #F4ECE1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+}
+
+h1 {
+    margin-top: 6vmin;
+    font-size: 6vmin;
+    color: #3D3E3E;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.pick-mood {
+    height: 60vmin;
+    width: 60vmin; /* adjust as needed */
+   
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+#moodSelectOption {
+    padding: 2vmin;
+    font-size: 4vmin;
+    font-family: monospace;
+
+    background-color: #F5EBE0;
+    color: #3D3E3E;
+    border-radius: 1.5vmin;
+    text-align: center;
+    
+    border-color: #C1C3C3;
+    border-width: 0.2vmin;
+
+    transition: transform 0.15s ease-in-out;
+    text-align: center;
+
+}
+
+#moodSelectOption:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+/* Generate and Regenerate buttons */
+
+.button {
+    border: none;
+    background: none;
+
+    padding: 2vmin;
+    font-size: 4vmin;
+    font-family: monospace;
+
+    background-color: #DD6031;
+    color: white;
+    border-radius: 1vmin;
+    border-color: #DD6031;
+    max-width: 80%;
+    text-align: center;
+
+    transition: transform 0.10s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+}
+
+.button:hover {
+    background-color: #D35122;
+    border-color: #D35122;
+    cursor: pointer;
+    transform: scale(1.006);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* Quote Page */
+
+.quote-page {
+    min-height: 100vh;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    gap: 4vmin; 
+    text-align: center;
+
+    /* Fade-in content */
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+#quote {
+    font-size: 5vmin;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.1vmin;
+
+}
+
+#author {
+    font-size: 4vmin;
+    text-align: center;
+    word-wrap: break-word;
+} 
+
+
+
+/* Hide Class */
+
+.hide {
+    display: none;
+}
+}
+

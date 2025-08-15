@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="quote-page hide">
+      <p id="quote">Quote</p>
+      <p id="author">– Author</p>
+      <button class="button" id="new-quote-btn">New Quote</button>
+      <!-- <div class="button" id="new-quote-btn">New Quote</div> -->
+    </div>
+
+    <main class="main-page">
+      <div class="typewriter">
+        <div>
+          <p id="typed-text">Get thou-self a quote</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="pick-mood">
+          <h1>Quote Generator</h1>
+          <select name="mood" id="moodSelectOption">
+            <option value="" disabled selected hidden>Pick a mood</option>
+            <option value="ambitious">ambitious</option>
+            <option value="happy">happy</option>
+            <option value="sad">sad</option>
+            <option value="thoughtful">thoughtful</option>
+            <option value="???">???</option>
+          </select>
+          <button class="button" id="generate-btn">Generate</button>
+          <!-- <div class="button" id="generate-btn">Generate</div> -->
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
