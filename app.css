@@ -283,6 +283,7 @@ h1 {
 
 .container {
     margin-top: 7vh;
+    /* margin-left: 0; */
     margin-left: 0.9vh;
     height: 35vh; /* adjust */
     width: 34vh;
@@ -349,13 +350,13 @@ h1 {
     border: none;
     background: none;
 
-    padding: 2vmin;
+    padding: 3vmin;
     font-size: 5vmin;
     font-family: monospace;
 
     background-color: #DD6031;
     color: white;
-    border-radius: 1vmin;
+    border-radius: 1.2vmin;
     border-color: #DD6031;
     max-width: 80%;
     text-align: center;
@@ -440,8 +441,4 @@ h1 {
     display: none;
 }
 }
-
-
-
-
 
