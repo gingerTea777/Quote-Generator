@@ -283,7 +283,7 @@ h1 {
 
 .container {
     margin-top: 7vh;
-    margin-left: 0vh;
+    margin-left: 0.5vh;
     height: 35vh; /* adjust */
     width: 34vh;
 
@@ -440,5 +440,6 @@ h1 {
     display: none;
 }
 }
+
 
 
