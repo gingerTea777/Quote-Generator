@@ -15,9 +15,21 @@ body {
     
 }
 
+/* Page fades in */
+.main-page {
+    /* Fade-in content */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* Animation - Typewriter Effect */
-
 #typed-text {
     margin-top: 15vh;
     color: #515252;
@@ -26,6 +38,7 @@ body {
 .typewriter {
     display: flex;
     justify-content: center; /* remove this for left aligned appearance */
+    margin-left: 6vh;
 }
 
 .typewriter p {
@@ -142,6 +155,21 @@ h1 {
 
 }
 
+
+#new-quote-btn {
+    margin-top: 2vmin;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
 /* Quote Page */
 
 .quote-page {
@@ -154,17 +182,21 @@ h1 {
     flex-direction: column;
     gap: 4vmin;
 
+}
+
+#first-fadein {
     /* Fade-in content */
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
-
 
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
 }
+
+
 
 #quote {
     font-size: 5vmin; /* font-size: 5vh */
@@ -177,6 +209,7 @@ h1 {
 
 #author {
     font-size: 4vmin;
+    margin-top: 2.5vmin;
 }
 
 
@@ -189,12 +222,26 @@ h1 {
 
 
 @media (min-width: 320px) and (max-width: 600px) {
-  
-/* Animation - Typewriter Effect */
 
+/* Page fades in */
+.main-page {
+    /* Fade-in content */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Animation - Typewriter Effect */
 .typewriter {
     display: flex;
     justify-content: center; /* remove this for left aligned appearance */
+    margin-left: 0;
 }
 
 .typewriter p{
@@ -236,7 +283,7 @@ h1 {
 
 .container {
     margin-top: 7vh;
-    margin-left: 5vmin;
+    margin-left: 0;
     height: 35vh; /* adjust */
     width: 34vh;
 
@@ -255,7 +302,7 @@ h1 {
 
 h1 {
     margin-top: 6vmin;
-    font-size: 6vmin;
+    font-size: 6.2vmin;
     color: #3D3E3E;
     font-family: 'Times New Roman', Times, serif;
 
@@ -275,7 +322,7 @@ h1 {
 
 #moodSelectOption {
     padding: 2vmin;
-    font-size: 4vmin;
+    font-size: 5vmin;
     font-family: monospace;
 
     background-color: #F5EBE0;
@@ -303,7 +350,7 @@ h1 {
     background: none;
 
     padding: 2vmin;
-    font-size: 4vmin;
+    font-size: 5vmin;
     font-family: monospace;
 
     background-color: #DD6031;
@@ -327,6 +374,20 @@ h1 {
 
 }
 
+#new-quote-btn {
+    margin-top: 5vmin;
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 /* Quote Page */
 
@@ -341,11 +402,13 @@ h1 {
     gap: 4vmin; 
     text-align: center;
 
+}
+
+#first-fadein {
     /* Fade-in content */
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
-
 
 @keyframes fadeIn {
     to {
@@ -355,7 +418,7 @@ h1 {
 
 
 #quote {
-    font-size: 5vmin;
+    font-size: 5.5vmin;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     line-height: 1.4;
@@ -364,7 +427,7 @@ h1 {
 }
 
 #author {
-    font-size: 4vmin;
+    font-size: 4.5vmin;
     text-align: center;
     word-wrap: break-word;
 } 
