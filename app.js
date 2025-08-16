@@ -18,7 +18,7 @@ let newQuoteBtn = document.querySelector("#new-quote-btn");
 const ambitiousQuote = [
     { text: "“Dream, dream, dream. Dreams transform into thoughts, and thoughts result in action.”", author: "APJ Abdul Kalam"}, 
 
-    { text: "“…failure is not about not succeeding. Rather it is about not putting in your best effort and not contributing, however modestly, to the common good.”", author: "Dr Vikram Sarabhai"}, 
+    { text: "“Life is not easy for any of us. But what of that? We must have perseverance and above all confidence in ourselves. We must believe that we are gifted for something and that this thing must be attained.”", author: "Marie Curie"}, 
 
     { text: "“The path from dreams to success does exist. May you have the vision to find it, the courage to get on to it, and the perseverance to follow it.”", author: "Kalpana Chawla"}, 
 
@@ -28,7 +28,7 @@ const ambitiousQuote = [
 const happyQuote = [
     { text: "“I slept and dreamt that life was joy. I awoke and saw that life was service. I acted and behold, service was joy.”", author: "Rabindranath Tagore"}, 
 
-    { text: "“Happiness lies in the joy of achievement and the thrill of creative effort.”", author: "Franklin D. Roosevelt"}, 
+    { text: "“He who can listen to music in the midst of noise can achieve great things.”", author: "Dr Vikram Sarabhai"}, 
 
     { text: "“What is done in love is done well.”", author: "Vincent Van Gogh"}, 
 
